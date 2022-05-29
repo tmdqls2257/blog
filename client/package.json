@@ -12,14 +12,18 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "@use-gesture/react": "^10.2.15",
     "netlify-cli": "^10.3.1",
     "next": "^12.1.6",
+    "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-spring": "^9.4.5",
     "stream-chat": "^6.5.1",
     "stream-chat-react": "^9.0.0"
   },
   "devDependencies": {
+    "@types/lodash.clamp": "^4.0.7",
     "@types/node": "^17.0.35",
     "@types/react": "^18.0.9",
     "@types/react-dom": "18.0.5",

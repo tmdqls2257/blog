@@ -1,10 +1,33 @@
-.body {
-  background-color: antiquewhite;
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+.shapeFill {
+  fill: #263343;
+}
+.hamburger {
+  padding: 8px 12px;
+  font-size: 24px;
 }
 
-.header {
-  img {
-    width: 500px;
-    height: 30vh;
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
