@@ -1,150 +1,127 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 .signIn {
-  position: relative;
-  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0.6em;
   cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 10px;
+  padding: 0.2em 0.5em;
   text-decoration: none;
-  font-size: inherit;
-  font-family: inherit;
-}
-
-.signIn.learn-more {
-  font-weight: 600;
-  color: #382b22;
+  text-align: center;
   text-transform: uppercase;
-  padding: 1.25em 2em;
-  background: #fff0f0;
-  border: 2px solid #b18597;
-  border-radius: 0.75em;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-color: #3498db;
+  border-radius: 0;
+  color: #3498db;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
-.signIn.learn-more::before {
-  position: absolute;
+.signIn:hover, .signIn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.signIn:after {
   content: '';
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  display: block;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #f9c4d2;
-  border-radius: inherit;
-  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-          box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-  -webkit-transform: translate3d(0, 0.75em, -1em);
-          transform: translate3d(0, 0.75em, -1em);
-  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #3498db;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
 }
 
-.signIn.learn-more:hover {
-  background: #ffe9e9;
-  -webkit-transform: translate(0, 0.25em);
-          transform: translate(0, 0.25em);
+.signIn:hover {
+  color: #fff;
 }
 
-.signIn.learn-more:hover::before {
-  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-          box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-  -webkit-transform: translate3d(0, 0.5em, -1em);
-          transform: translate3d(0, 0.5em, -1em);
-}
-
-.signIn.learn-more:active {
-  background: #ffe9e9;
-  -webkit-transform: translate(0em, 0.75em);
-          transform: translate(0em, 0.75em);
-}
-
-.signIn.learn-more:active::before {
-  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-          box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-  -webkit-transform: translate3d(0, 0, -1em);
-          transform: translate3d(0, 0, -1em);
+.signIn:hover:after {
+  width: 110%;
 }
 
 .signUp {
-  position: relative;
-  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0.6em;
   cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 10px;
+  padding: 0.2em 0.5em;
   text-decoration: none;
-  font-size: inherit;
-  font-family: inherit;
-}
-
-.signUp.learn-more {
-  font-weight: 600;
-  color: #382b22;
+  text-align: center;
   text-transform: uppercase;
-  padding: 1.25em 2em;
-  background: #fff0f0;
-  border: 2px solid #b18597;
-  border-radius: 0.75em;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-color: #3498db;
+  border-radius: 0;
+  color: #3498db;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
-.signUp.learn-more::before {
-  position: absolute;
+.signUp:hover, .signUp:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.signUp:after {
   content: '';
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  display: block;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #f9c4d2;
-  border-radius: inherit;
-  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-          box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-  -webkit-transform: translate3d(0, 0.75em, -1em);
-          transform: translate3d(0, 0.75em, -1em);
-  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #3498db;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
 }
 
-.signUp.learn-more:hover {
-  background: #ffe9e9;
-  -webkit-transform: translate(0, 0.25em);
-          transform: translate(0, 0.25em);
+.signUp:hover {
+  color: #fff;
 }
 
-.signUp.learn-more:hover::before {
-  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-          box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-  -webkit-transform: translate3d(0, 0.5em, -1em);
-          transform: translate3d(0, 0.5em, -1em);
-}
-
-.signUp.learn-more:active {
-  background: #ffe9e9;
-  -webkit-transform: translate(0em, 0.75em);
-          transform: translate(0em, 0.75em);
-}
-
-.signUp.learn-more:active::before {
-  -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-          box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-  -webkit-transform: translate3d(0, 0, -1em);
-          transform: translate3d(0, 0, -1em);
+.signUp:hover:after {
+  width: 110%;
 }

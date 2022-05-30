@@ -1,19 +1,24 @@
+$dark-blue: #16415d;
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 1;
 }
+.btnContainer {
+  display: flex;
+}
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  background-color: #263343;
+  background-color: $dark-blue;
   padding: 8px 12px;
 }
 .shapeFill {
-  fill: #263343;
+  fill: $dark-blue;
 }
 .hamburger {
   padding: 8px 12px;

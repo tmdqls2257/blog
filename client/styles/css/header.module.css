@@ -5,6 +5,12 @@
   z-index: 1;
 }
 
+.btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,12 +22,12 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  background-color: #263343;
+  background-color: #16415d;
   padding: 8px 12px;
 }
 
 .shapeFill {
-  fill: #263343;
+  fill: #16415d;
 }
 
 .hamburger {
