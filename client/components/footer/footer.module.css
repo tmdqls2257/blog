@@ -1,0 +1,40 @@
+.wave {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.shapeFill {
+  fill: #ffffff;
+}
+
+.footer {
+  background-color: purple;
+}
+
+.content {
+  height: 100px;
+}
+
+.github {
+  margin-top: 3rem;
+  width: 30px;
+}
+
+.github:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}

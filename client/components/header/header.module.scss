@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+.wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.left {
+  align-items: center;
+  justify-content: left;
+  display: flex;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.ul {
+  display: flex;
+  margin-right: 4rem;
+}
+.list {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.list:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .list {
+    display: none;
+  }
+}

@@ -1,0 +1,74 @@
+.Intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+
+/* left side styling */
+.left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.name > :nth-child(1) {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.name > :nth-child(2) {
+  color: orange;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* right side styling */
+.right {
+  position: relative;
+}
+
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: -56%;
+  filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column;
+    gap: 7rem;
+    height: 64rem;
+  }
+
+  .right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .right .blur {
+    display: none;
+  }
+  .floatingDiv:nth-of-type(1) {
+    /* display: none; */
+    top: -7rem !important;
+  }
+}
