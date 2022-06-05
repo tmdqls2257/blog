@@ -42,14 +42,30 @@
   font-weight: 400;
 }
 
+.menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 4rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.list {
+.ul .list {
   margin: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +75,7 @@
           align-items: center;
 }
 
-.list:hover {
+.ul .list:hover {
   color: gray;
   cursor: pointer;
 }

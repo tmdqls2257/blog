@@ -1,10 +1,10 @@
-.hamburger_container {
+.hamburgerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hamburger_box {
+.hamburgerBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,13 +17,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 2;
 }
 
-.hamburger_box:hover {
+.hamburgerBox:hover {
   cursor: pointer;
 }
 
-.hamburger_line {
+.hamburgerLine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +39,7 @@
   transition: all 0.4s;
 }
 
-.hamburger_line1 {
+.hamburgerLine1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,13 +50,13 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 20px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   -webkit-transform: translateY(12.5px) rotate(-45deg);
           transform: translateY(12.5px) rotate(-45deg);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
-.hamburger_line2 {
+.hamburgerLine2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,12 +67,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 20px;
-  opacity: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  opacity: 0;
 }
 
-.hamburger_line3 {
+.hamburgerLine3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,8 +83,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 20px;
-  -webkit-transform: translateY(-12.5px) rotate(45deg);
-          transform: translateY(-12.5px) rotate(45deg);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  -webkit-transform: translateY(-12.5px) rotate(45deg);
+          transform: translateY(-12.5px) rotate(45deg);
 }

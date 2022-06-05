@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './main.module.css';
 import 'swiper/css';
 import Slider from './slider/slider';

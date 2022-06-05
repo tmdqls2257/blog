@@ -30,37 +30,7 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className={styles.right}>
-        <img src={'/images/Vetor1.png'} alt="" />
-        <img src={'/images/Vetor2.png'} alt="" />
-        {/* <img src={boy} alt="" /> */}
-        {/* animation */}
-        <motion.img
-          initial={{ left: '-36%' }}
-          whileInView={{ left: '-24%' }}
-          transition={transition}
-          src={'./images/glassesimoji.png'}
-          alt=""
-        />
-
-        <motion.div
-          initial={{ top: '-4%', left: '74%' }}
-          whileInView={{ left: '68%' }}
-          transition={transition}
-          className={styles.floatingDiv}
-        ></motion.div>
-
-        {/* animation */}
-        <motion.div
-          initial={{ left: '9rem', top: '18rem' }}
-          whileInView={{ left: '0rem' }}
-          transition={transition}
-          className={styles.floatingDiv}
-        ></motion.div>
-
-        <div
-          className={styles.blur}
-          style={{ background: 'rgb(238 210 255)' }}
-        ></div>
+        <div className={styles.blur}></div>
         <div
           className={styles.blur}
           style={{
@@ -68,7 +38,7 @@ const Intro = () => {
             top: '17rem',
             width: '21rem',
             height: '11rem',
-            left: '-9rem',
+            right: '9rem',
           }}
         ></div>
       </div>

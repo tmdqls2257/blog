@@ -4,6 +4,12 @@
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "useRecoilCallback"
+      }
+    ],
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],

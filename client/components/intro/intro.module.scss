@@ -8,7 +8,6 @@
 .left {
   display: flex;
   position: relative;
-  flex: 1;
   flex-direction: column;
   gap: 2rem;
 }
@@ -49,7 +48,7 @@
   filter: blur(212px);
   z-index: -9;
   top: -18%;
-  left: -56%;
+  right: 0;
   filter: blur(72px);
 }
 

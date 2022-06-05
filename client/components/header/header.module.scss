@@ -22,19 +22,25 @@
   justify-content: flex-end;
   font-weight: 400;
 }
-
-.ul {
-  display: flex;
-  margin-right: 4rem;
-}
-.list {
-  margin: 0 1rem;
+.menuContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.list:hover {
-  color: gray;
-  cursor: pointer;
+.ul {
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  justify-content: center;
+  .list {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: gray;
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

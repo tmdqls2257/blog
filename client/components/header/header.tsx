@@ -1,16 +1,10 @@
-import { faBars, faBurger } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../button/button';
+import Bar from './bar/sidebar';
 
 // import Toggle from '../Toggle/Toggle';
 import styles from './header.module.css';
-
-type typeOfHeader = {
-  data: string;
-};
 
 const Header = () => {
   const router = useRouter();
@@ -27,22 +21,25 @@ const Header = () => {
       </div>
       {/* right */}
       <div className={styles.right}>
-        <div>
+        <div className={styles.menuContainer}>
           <ul className={styles.ul} style={{ listStyleType: 'none' }}>
             <li className={styles.list} onClick={() => router.push('/')}>
-              <p>Home</p>
+              <span>Home</span>
             </li>
             <li className={styles.list}>
-              <p>Serivces</p>
+              <span>Serivces</span>
             </li>
             <li className={styles.list}>
-              <p>Experience</p>
+              <span>Experience</span>
             </li>
             <li
               className={styles.list}
               onClick={() => router.push(process.env.NEXT_PUBLIC_PROFILE!)}
             >
-              <p>Protfolio</p>
+              <span>Protfolio</span>
+            </li>
+            <li className={styles.list}>
+              <Bar />
             </li>
           </ul>
         </div>
