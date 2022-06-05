@@ -1,7 +1,8 @@
 import React from 'react';
 import { SidebarData } from './sidebarData';
 import styles from './navSlide.module.css';
-import { atom, useRecoilState } from 'recoil';
+import { useRecoilState } from 'recoil';
+import { slidestate } from '../../../../store/store';
 
 type category = {
   title: string;
@@ -11,10 +12,6 @@ type category = {
 };
 
 const NavSlide = () => {
-  const slidestate = atom({
-    key: 'slidestate',
-    default: false,
-  });
   const [navSlidestate, setNavSlidestate] = useRecoilState(slidestate);
   return (
     <div className={styles.slideContainer}>
