@@ -1,14 +1,11 @@
 @import '../../styles/variables.scss';
 .wrapper {
   height: 10vh;
-  display: flex;
-  justify-content: space-between;
+  @include displayJustifyAlign(flex, space-between, '');
   margin-bottom: 2rem;
 }
 .left {
-  align-items: center;
-  justify-content: left;
-  display: flex;
+  @include displayJustifyAlign(flex, left, center);
 }
 
 .name {
@@ -17,20 +14,16 @@
 }
 .right {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  @include displayJustifyAlign(flex, flex-end, center);
   font-weight: 400;
 }
 .menuContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayJustifyAlign(flex, center, center);
 }
 .ul {
   display: flex;
   margin-right: 2rem;
-  margin-bottom: 0;
+  margin: auto;
   justify-content: center;
   .list {
     margin: 0 1rem;

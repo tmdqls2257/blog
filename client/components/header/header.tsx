@@ -1,15 +1,20 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
+import { useRecoilState } from 'recoil';
+import { signModalState } from '../../store/store';
 import Button from '../button/button';
+import SignIn from '../signIn/signIn';
 import Bar from './bar/sidebar';
 
 // import Toggle from '../Toggle/Toggle';
 import styles from './header.module.css';
 
 const Header = () => {
+  const [signInState, setSignInState] = useRecoilState(signModalState);
+
   const router = useRouter();
   const btnClick = () => {
-    console.log(1);
+    signInState ? setSignInState(false) : setSignInState(true);
   };
 
   return (
@@ -44,6 +49,7 @@ const Header = () => {
           </ul>
         </div>
         <Button onClick={btnClick}>signIn</Button>
+        {signInState && <SignIn />}
       </div>
     </header>
   );

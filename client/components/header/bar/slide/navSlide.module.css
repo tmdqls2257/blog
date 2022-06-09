@@ -1,48 +1,31 @@
 .slideContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: orange;
   position: absolute;
   width: 300px;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   top: 0;
   right: 0;
+  z-index: 1;
   -webkit-animation: identifier 1s;
           animation: identifier 1s;
 }
 
-.navText {
-  color: #f5f5f5;
-  font-size: 18px;
-  margin: 1vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 16px;
-  border-radius: 4px;
-}
-
-.navText:hover {
-  cursor: pointer;
-}
-
 @-webkit-keyframes identifier {
   from {
-    right: -30%;
+    right: -20em;
   }
   to {
     right: 0;
@@ -51,9 +34,30 @@
 
 @keyframes identifier {
   from {
-    right: -30%;
+    right: -20em;
   }
   to {
     right: 0;
   }
+}
+
+.navText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: "";
+      -ms-flex-pack: "";
+          justify-content: "";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f5f5f5;
+  font-size: 18px;
+  margin: 1vh;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.navText:hover {
+  cursor: pointer;
 }

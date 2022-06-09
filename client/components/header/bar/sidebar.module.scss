@@ -8,9 +8,22 @@
   transition: all $second;
 }
 
+.activedNavbar {
+  transition: all 1s;
+  transform: translateX(-8em);
+  z-index: 2;
+}
+
+.navBar {
+  transition: all 1s;
+  transform: translateX(0);
+  z-index: 2;
+}
+
 .hamburgerContainer {
   display: flex;
 }
+
 .hamburgerBox {
   display: flex;
   width: 35px;
@@ -20,7 +33,6 @@
   &:hover {
     cursor: pointer;
   }
-  z-index: 2;
 }
 
 .hamburgerLine {

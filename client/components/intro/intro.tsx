@@ -5,15 +5,10 @@ import styles from './intro.module.css';
 import Button from '../button/button';
 
 const Intro = () => {
-  // Transition
-  const transition = { duration: 2, type: 'spring' };
-
   return (
     <div className={styles.Intro} id="Intro">
-      {/* left name side */}
       <div className={styles.left}>
         <div className={styles.name}>
-          {/* yahan change hy darkmode ka */}
           <span>Hy! I Am</span>
           <span>Teogu</span>
           <span>
@@ -26,9 +21,8 @@ const Intro = () => {
             Hire me
           </Button>
         </Link>
-        {/* social icons */}
       </div>
-      {/* right image side */}
+
       <div className={styles.right}>
         <div className={styles.blur}></div>
         <div

@@ -2,17 +2,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70vh;
 }
 
 /* heading */
@@ -34,4 +33,10 @@
   -webkit-filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
+}
+
+.infiniteSrollCotainer {
+  max-height: 1000px;
+  background-color: aqua;
+  overflow: scroll;
 }

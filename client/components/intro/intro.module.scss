@@ -7,7 +7,6 @@
 /* left side styling */
 .left {
   display: flex;
-  position: relative;
   flex-direction: column;
   gap: 2rem;
 }
@@ -67,7 +66,6 @@
     display: none;
   }
   .floatingDiv:nth-of-type(1) {
-    /* display: none; */
     top: -7rem !important;
   }
 }
