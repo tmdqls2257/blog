@@ -1,1 +1,0 @@
-{"version":3,"file":"dummy.js","sourceRoot":"","sources":["../../src/data/dummy.ts"],"names":[],"mappings":";;AAAa,QAAA,KAAK,GAAG;IACnB;QACE,KAAK,EAAE,OAAO;QACd,OAAO,EAAE,SAAS;QAClB,MAAM,EAAE,KAAK;QACb,wBAAwB;QACxB,QAAQ,EAAE,MAAM;KACjB;IACD;QACE,KAAK,EAAE,eAAe;QACtB,OAAO,EAAE,SAAS;QAClB,MAAM,EAAE,KAAK;QACb,wBAAwB;QACxB,QAAQ,EAAE,MAAM;KACjB;CACF,CAAA"}

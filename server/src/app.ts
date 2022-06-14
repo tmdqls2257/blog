@@ -3,16 +3,29 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 // import 'express-async-errors'
-import signUpRoute from './router/signUp'
+import signUpRoute from './router/auth'
 import blogRoute from './router/blog'
-const app = express()
+import mongoose from 'mongoose'
 
+mongoose
+  .connect(
+    `
+mongodb+srv://tmdqls2257:chl135@cluster0.qrrmv.mongodb.net/?retryWrites=true&w=majority`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => console.log('MongoDb Connected'))
+  .catch(err => console.log(err))
+
+export const app = express()
 app.use(express.json())
 app.use(helmet())
 app.use(cors())
 app.use(morgan('tiny'))
 
-app.use('/signUp', signUpRoute)
+app.use('/auth', signUpRoute)
 app.use('/blog', blogRoute)
 
 //  ctrl + shift + p 로 configure user snippets  검색
